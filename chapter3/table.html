@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="1" cellpadding="2">
+        <!-- 表格标题,border表示边框粗细,
+         cellspacing表示边框之间的空白,
+         cellpadding表示单元格内容与边框的距离 -->
+        <!-- caption 标签作用: 表格标题 -->
+        <caption>
+            学生信息表
+        </caption>
+        <th>姓名</th>
+        <th colspan="2">年龄</th>
+        <!-- colspan 表示合并列 -->
+        <th>性别</th>
+        <!-- th 标签作用: 表格标题 -->
+        <tr>
+            <!-- tr 标签作用: 表格行 -->
+            <td>张三</td>
+            <!-- td 标签作用: 表格单元格 -->
+            <td rowspan="2">18</td>
+            <!-- rowspan 表示合并行 -->
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <!-- <td>18</td> -->
+            <td>女</td>
+        </tr>
+    </table>
+</body>
+
+</html>
