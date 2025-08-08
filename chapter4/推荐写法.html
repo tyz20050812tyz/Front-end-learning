@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 推荐写法 */
+        /* 内部样式表 */
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+
+    <!--  外部样式表（推荐写法）  -->
+    <!-- 使用外部样式表的步骤:
+        1.在html文件中引入外部样式表，例如index.css
+        2.在外部样式表中编写样式
+    -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- 为什么选择？
+        1.外部样式表可以多个html文件引入，而内部样式表只能在一个html文件中引入
+        2.外部样式表可以使html文件结构更加清晰，而内部样式表会使html文件结构更加复杂
+        3.代码分离，方便维护
+        4.会缓存，提高加载速度
+    -->
+</head>
+
+<body>
+    <!-- 内敛样式表 -->
+    <div style=" background-color: rgb(135, 16, 139);">
+
+    </div>
+</body>
+
+</html>
