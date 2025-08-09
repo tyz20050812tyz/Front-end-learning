@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪类选择器 */
+        /* 第一个子元素 */
+        
+        ul li:first-child {
+            background-color: red;
+        }
+        /* 最后一个子元素 */
+        
+        ul li:last-child {
+            background-color: blue;
+        }
+        /* 第n个子元素 */
+        
+        ul li:nth-child(2) {
+            background-color: green;
+        }
+        /* 偶数个元素 */
+        /* 选择所有的偶数个元素 */
+        
+        ol li:nth-child(2n) {
+            background-color: yellow;
+        }
+        /* 否定选择器 */
+        /* 选择所有的不是奇数个元素 */
+        
+        ol li:not(:nth-child(2n+1)) {
+            background-color: pink;
+        }
+        /* 链接 */
+        /* 未访问的链接 */
+        
+        a:link {
+            color: rgb(0, 68, 255);
+        }
+        /* 已访问的链接 */
+        
+        a:visited {
+            color: green;
+        }
+        /* 鼠标悬停的链接 */
+        
+        a:hover {
+            color: rgb(255, 0, 0);
+        }
+        /* 点击的链接 */
+        
+        a:active {
+            color: blue;
+        }
+        /* 伪元素 */
+        /* 第一个字母 */
+        
+        p::first-letter {
+            color: rgba(0, 255, 174, 0.362);
+        }
+        /* 第一个行,只能作用于块级元素 */
+        
+        p::first-line {
+            color: rgba(25, 0, 255, 0.681);
+        }
+        /* 选中的文本 */
+        
+        p::selection {
+            background-color: rgb(49, 193, 66);
+        }
+        
+        span::first-line {
+            color: red;
+        }
+        /* 输入框 */
+        /* 输入框获得焦点 */
+        
+        input:focus {
+            background-color: rgb(255, 0, 0);
+        }
+        /* 开始 */
+        
+        p::before {
+            content: '这是一个段落';
+        }
+        /* 结束 */
+        
+        p::after {
+            content: '这是一个段落';
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ol>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ol>
+    <a href="https://www.baidu.com">跳转到百度</a>
+    <a href="https://www.taobao.com">跳转到淘宝</a>
+    <p>
+        这是一个段落
+    </p>
+    <span>
+        这是一个span元素
+
+    </span>
+    <input type="text">
+
+</body>
+
+</html>
