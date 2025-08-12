@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            /* 三栏布局 */
+            /* 1. 左右固定，中间自适应 */
+            /* 2. 左右自适应，中间固定 */
+            /* 3. 左右自适应，中间也自适应 */
+        }
+        /* 用float实现，就要先写两边的，最后写中间的，用margin实现，margin覆盖左右两个 */
+        /* .a {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+        }
+        
+        .c {
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            float: right;
+        }
+        
+        .b {
+            height: 100px;
+            background-color: red;
+            margin: 0 200px;
+        } */
+        /* 用position实现，左右固定，中间自适应 */
+        /* 子元素都是absolute，父元素是relative */
+        /* .a {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+        }
+        
+        .c {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 0;
+        }
+        
+        .b {
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 100px;
+            right: 100px;
+        } */
+        /* 用flex实现 */
+        /* 先固定住左右，然后用flex:1针对剩余的空间，
+        实现中间自适应 */
+        
+        .father {
+            display: flex;
+        }
+        
+        .a {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            order: 1;
+        }
+        
+        .c {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            order: 3;
+        }
+        
+        .b {
+            height: 100px;
+            background-color: red;
+            flex-grow: 1;
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="a"></div>
+        <div class="c"></div>
+        <div class="b"></div>
+    </div>
+</body>
+
+</html>

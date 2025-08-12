@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            width: 200px;
+            height: 2000px;
+            background-color: pink;
+        }
+        
+        .b {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 使用flexbox居中 */
+            position: sticky;
+            top: 0;
+            left: 50%;
+            bottom: 0;
+            /* z-index是层级，默认是0 */
+            /* 层级越高，越在上面 */
+        }
+        
+        .c {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 找position：relative */
+            /* position: absolute;
+            right: 10%; */
+        }
+        
+        .d {
+            width: 200px;
+            height: 2000px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a"></div>
+    <div class="b">
+        <div class="c"></div>
+    </div>
+    <div class="d"></div>
+
+</body>
+
+</html>

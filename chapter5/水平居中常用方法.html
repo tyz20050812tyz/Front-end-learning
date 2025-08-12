@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 行内元素水平居中 */
+        /* 方法一：设置为block */
+        
+        .span1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            display: block;
+            text-align: center;
+            line-height: 200px;
+        }
+        /* 方法二：使用flex */
+        
+        .span1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 块级元素水平居中 */
+        /* 使用position */
+        /* .div1 {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            position: relative;
+        }
+        
+        .div2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* 表示将元素沿X轴和Y轴分别
+            向左和向上移动元素自身宽度和高度的50%
+        } */
+        /* 方法二：使用flex */
+        
+        .div1 {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .div2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div2">
+
+
+        </div>
+    </div>
+    <!-- <span class="span1">水平居中</span> -->
+
+</body>
+
+</html>
