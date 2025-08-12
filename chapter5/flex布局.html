@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            width: 200px;
+            height: 500px;
+            background-color: pink;
+            display: flex;
+            /* 主轴方向 */
+            flex-direction: row;
+            /* flex-direction:column-reverse; */
+            /* 是否换行 */
+            /* nowrap就是不换行，会平均分大小 */
+            flex-wrap: nowrap;
+            /* wrap是换行，不会改变子元素大小 */
+            /* 水平对齐方式 */
+            justify-content: center;
+            /* flex-start是水平左对齐 */
+            /* flex-end是水平右对齐 */
+            /* center是水平居中 */
+            /* space-between是平均分布，但是第一个和最后一个元素贴着边,分成n-1份 */
+            /* space-around是平均分布，但是每个元素都有一定的间距,分成n份 */
+            /* space-evenly是平均分布，但是每个元素的间距都相等,分成n+1份 */
+            /* 垂直对齐方式 */
+            align-items: center;
+            /* center是垂直居中 */
+            /* flex-start是垂直顶部 */
+            /* flex-end是垂直底部 */
+            /* baseline是基线对齐,基线是文字的底部 */
+            /* stretch是没设置子元素大小的时候，自动填充整个父元素 */
+            /* 多行多列垂直对齐方式 */
+            align-content: center;
+            /* center是垂直居中 */
+            /* flex-start是垂直顶部 */
+            /* flex-end是垂直底部 */
+            /* baseline是基线对齐,基线是文字的底部 */
+        }
+        
+        .b {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        
+        .c {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 子元素的顺序,越大越后面 */
+            /* 默认是0 */
+            order: -1;
+            /* 子元素放大倍数，默认是0 */
+            /* 针对的是剩余的空间 */
+            flex-grow: 0;
+            /* 子元素缩小倍数，默认是1 */
+            /* 1是允许缩小，0是不允许缩小 */
+            flex-shrink: 0;
+        }
+        
+        .d {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">1</div>
+        <div class="c">2</div>
+        <div class="d">3</div>
+    </div>
+</body>
+
+</html>
