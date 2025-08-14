@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            border: 10px solid rgb(0, 26, 255);
+            /* 触发BFC */
+            /* 1.float */
+            /* float: left;
+            /* 2.display */
+            /* display: inline-block;
+            3.overflow,最推荐 */
+            overflow: hidden;
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 子元素float为left，触发BFC */
+            float: left;
+            /* 开启BFC后，子元素与父元素的边框不会重合 */
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+
+        </div>
+    </div>
+</body>
+
+</html>

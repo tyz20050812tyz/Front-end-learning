@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 网格布局是针对整个页面的布局,不是针对某个元素的布局 */
+        /* flex,float布局都是基于行和列的布局 */
+        
+        .container {
+            width: 800px;
+            height: 800px;
+            background-color: pink;
+            /* 网格布局 */
+            display: grid;
+            /* 定义网格布局的行数 */
+            grid-template-rows: 50px 350px 350px 50px;
+            /* grid-template-columns: repeat(4.25%); */
+            /* 定义网格布局的列数 */
+            /* grid-template-columns: ; */
+            /* 定义网格布局的间距 */
+            grid-gap: 0px;
+        }
+        
+        .header {
+            background-color: red;
+        }
+        
+        .nav {
+            display: grid;
+            /* 定义网格布局的列数 */
+            grid-template-columns: repeat(3, 1fr);
+            /* 定义网格布局的行数 */
+            grid-template-rows: repeat(2, 50%);
+        }
+        
+        .nav div {
+            background-color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            头部
+        </div>
+        <div class="nav">
+
+            <div class="导航">导航1</div>
+            <div class="导航">导航2</div>
+            <div class="导航">导航3</div>
+            <div class="导航">导航4</div>
+            <div class="导航">导航5</div>
+            <div class="导航">导航6</div>
+        </div>
+        <div class="main">
+            主体
+        </div>
+        <div class="footer">
+            底部
+        </div>
+    </div>
+</body>
+
+</html>

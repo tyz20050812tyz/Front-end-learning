@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .导航 {
+            position: fixed;
+            top: 800px;
+            right: 20px;
+        }
+        
+        .导航 div {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .a {
+            background-color: pink;
+        }
+        
+        .b {
+            background-color: red;
+        }
+        
+        .c {
+            background-color: blue;
+        }
+        
+        span {
+            display: block;
+        }
+        
+        .文字框 {
+            position: fixed;
+            top: 930px;
+            right: 80px;
+            font-size: 20px;
+            text-align: center;
+            width: 200px;
+            height: 30px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 三角的制作方式 */
+        
+        .三角 {
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent aquamarine;
+            position: fixed;
+            right: 60px;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="导航">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+    <div class="文字框">
+        <span>联系老师</span>
+        <div class="三角"></div>
+    </div>
+
+</body>
+
+</html>
